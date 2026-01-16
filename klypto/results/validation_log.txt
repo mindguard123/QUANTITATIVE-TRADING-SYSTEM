@@ -1,0 +1,414 @@
+﻿D:/klypto/.venv/Scripts/python.exe : 2026-01-16 22:42:54.626343: I tensorflow/core/util/port.cc:153] 
+oneDNN custom operations are on. You may see slightly different numerical results due to floating-point 
+round-off errors from different computation orders. To turn them off, set the environment variable 
+`TF_ENABLE_ONEDNN_OPTS=0`.
+At line:1 char:1
++ D:/klypto/.venv/Scripts/python.exe run_validation_standalone.py 2>&1  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-01-16 22:4...ONEDNN_OPTS=0`.:String) [], RemoteExcept 
+   ion
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-01-16 22:42:58.129803: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You 
+may see slightly different numerical results due to floating-point round-off errors from different 
+computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-16 22:42:59 - quantitative_trading - INFO - Initialized DataAcquisition for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Initialized DataAcquisition for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Initialized DataAcquisition for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Initialized DataAcquisition for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Initialized DataAcquisition for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Initialized DataAcquisition for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Initialized DataAcquisition for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Initialized DataAcquisition for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Date range: 2018-01-01 to 2024-01-01
+2026-01-16 22:42:59 - quantitative_trading - INFO - Date range: 2018-01-01 to 2024-01-01
+2026-01-16 22:42:59 - quantitative_trading - INFO - Date range: 2018-01-01 to 2024-01-01
+2026-01-16 22:42:59 - quantitative_trading - INFO - Date range: 2018-01-01 to 2024-01-01
+2026-01-16 22:42:59 - quantitative_trading - INFO - Date range: 2018-01-01 to 2024-01-01
+2026-01-16 22:42:59 - quantitative_trading - INFO - Date range: 2018-01-01 to 2024-01-01
+2026-01-16 22:42:59 - quantitative_trading - INFO - Date range: 2018-01-01 to 2024-01-01
+2026-01-16 22:42:59 - quantitative_trading - INFO - Date range: 2018-01-01 to 2024-01-01
+2026-01-16 22:42:59 - quantitative_trading - INFO - Fetching data from Yahoo Finance for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Fetching data from Yahoo Finance for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Fetching data from Yahoo Finance for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Fetching data from Yahoo Finance for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Fetching data from Yahoo Finance for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Fetching data from Yahoo Finance for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Fetching data from Yahoo Finance for NIFTY
+2026-01-16 22:42:59 - quantitative_trading - INFO - Fetching data from Yahoo Finance for NIFTY
+2026-01-16 22:43:00 - quantitative_trading - INFO - Successfully fetched 1477 rows from Yahoo Finance
+2026-01-16 22:43:00 - quantitative_trading - INFO - Successfully fetched 1477 rows from Yahoo Finance
+2026-01-16 22:43:00 - quantitative_trading - INFO - Successfully fetched 1477 rows from Yahoo Finance
+2026-01-16 22:43:00 - quantitative_trading - INFO - Successfully fetched 1477 rows from Yahoo Finance
+2026-01-16 22:43:00 - quantitative_trading - INFO - Successfully fetched 1477 rows from Yahoo Finance
+2026-01-16 22:43:00 - quantitative_trading - INFO - Successfully fetched 1477 rows from Yahoo Finance
+2026-01-16 22:43:00 - quantitative_trading - INFO - Successfully fetched 1477 rows from Yahoo Finance
+2026-01-16 22:43:00 - quantitative_trading - INFO - Successfully fetched 1477 rows from Yahoo Finance
+2026-01-16 22:43:00 - quantitative_trading - INFO - Cleaning data...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Cleaning data...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Cleaning data...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Cleaning data...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Cleaning data...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Cleaning data...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Cleaning data...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Cleaning data...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Data cleaning complete. Final shape: (1477, 8)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Data cleaning complete. Final shape: (1477, 8)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Data cleaning complete. Final shape: (1477, 8)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Data cleaning complete. Final shape: (1477, 8)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Data cleaning complete. Final shape: (1477, 8)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Data cleaning complete. Final shape: (1477, 8)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Data cleaning complete. Final shape: (1477, 8)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Data cleaning complete. Final shape: (1477, 8)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized FeatureEngineer with 1477 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized FeatureEngineer with 1477 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized FeatureEngineer with 1477 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized FeatureEngineer with 1477 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized FeatureEngineer with 1477 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized FeatureEngineer with 1477 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized FeatureEngineer with 1477 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized FeatureEngineer with 1477 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Creating all features...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Creating all features...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Creating all features...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Creating all features...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Creating all features...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Creating all features...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Creating all features...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Creating all features...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA features for periods: [5, 10, 20, 50, 
+100, 200]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA features for periods: [5, 10, 20, 50, 
+100, 200]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA features for periods: [5, 10, 20, 50, 
+100, 200]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA features for periods: [5, 10, 20, 50, 
+100, 200]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA features for periods: [5, 10, 20, 50, 
+100, 200]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA features for periods: [5, 10, 20, 50, 
+100, 200]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA features for periods: [5, 10, 20, 50, 
+100, 200]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA features for periods: [5, 10, 20, 50, 
+100, 200]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA crossover features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA crossover features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA crossover features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA crossover features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA crossover features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA crossover features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA crossover features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA crossover features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA distance features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA distance features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA distance features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA distance features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA distance features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA distance features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA distance features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA distance features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA slope features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA slope features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA slope features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA slope features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA slope features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA slope features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA slope features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding EMA slope features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding RSI with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding RSI with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding RSI with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding RSI with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding RSI with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding RSI with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding RSI with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding RSI with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding MACD (12, 26, 9)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding MACD (12, 26, 9)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding MACD (12, 26, 9)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding MACD (12, 26, 9)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding MACD (12, 26, 9)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding MACD (12, 26, 9)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding MACD (12, 26, 9)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding MACD (12, 26, 9)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Stochastic (14, 3)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Stochastic (14, 3)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Stochastic (14, 3)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Stochastic (14, 3)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Stochastic (14, 3)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Stochastic (14, 3)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Stochastic (14, 3)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Stochastic (14, 3)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Bollinger Bands (20, 2.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Bollinger Bands (20, 2.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Bollinger Bands (20, 2.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Bollinger Bands (20, 2.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Bollinger Bands (20, 2.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Bollinger Bands (20, 2.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Bollinger Bands (20, 2.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding Bollinger Bands (20, 2.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding ATR with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding ATR with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding ATR with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding ATR with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding ATR with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding ATR with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding ATR with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding ATR with period 14
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding volume features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding volume features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding volume features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding volume features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding volume features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding volume features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding volume features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding volume features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding price features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding price features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding price features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding price features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding price features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding price features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding price features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding price features
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding lagged features for lags: [1, 2, 3, 5, 10]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding lagged features for lags: [1, 2, 3, 5, 10]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding lagged features for lags: [1, 2, 3, 5, 10]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding lagged features for lags: [1, 2, 3, 5, 10]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding lagged features for lags: [1, 2, 3, 5, 10]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding lagged features for lags: [1, 2, 3, 5, 10]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding lagged features for lags: [1, 2, 3, 5, 10]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Adding lagged features for lags: [1, 2, 3, 5, 10]
+2026-01-16 22:43:00 - quantitative_trading - INFO - Removed 50 rows with NaN values
+2026-01-16 22:43:00 - quantitative_trading - INFO - Removed 50 rows with NaN values
+2026-01-16 22:43:00 - quantitative_trading - INFO - Removed 50 rows with NaN values
+2026-01-16 22:43:00 - quantitative_trading - INFO - Removed 50 rows with NaN values
+2026-01-16 22:43:00 - quantitative_trading - INFO - Removed 50 rows with NaN values
+2026-01-16 22:43:00 - quantitative_trading - INFO - Removed 50 rows with NaN values
+2026-01-16 22:43:00 - quantitative_trading - INFO - Removed 50 rows with NaN values
+2026-01-16 22:43:00 - quantitative_trading - INFO - Removed 50 rows with NaN values
+2026-01-16 22:43:00 - quantitative_trading - INFO - Feature engineering complete. Shape: (1427, 100)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Feature engineering complete. Shape: (1427, 100)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Feature engineering complete. Shape: (1427, 100)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Feature engineering complete. Shape: (1427, 100)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Feature engineering complete. Shape: (1427, 100)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Feature engineering complete. Shape: (1427, 100)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Feature engineering complete. Shape: (1427, 100)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Feature engineering complete. Shape: (1427, 100)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Total features: 100
+2026-01-16 22:43:00 - quantitative_trading - INFO - Total features: 100
+2026-01-16 22:43:00 - quantitative_trading - INFO - Total features: 100
+2026-01-16 22:43:00 - quantitative_trading - INFO - Total features: 100
+2026-01-16 22:43:00 - quantitative_trading - INFO - Total features: 100
+2026-01-16 22:43:00 - quantitative_trading - INFO - Total features: 100
+2026-01-16 22:43:00 - quantitative_trading - INFO - Total features: 100
+2026-01-16 22:43:00 - quantitative_trading - INFO - Total features: 100
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized OutlierDetector with 1427 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized OutlierDetector with 1427 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized OutlierDetector with 1427 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized OutlierDetector with 1427 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized OutlierDetector with 1427 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized OutlierDetector with 1427 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized OutlierDetector with 1427 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Initialized OutlierDetector with 1427 rows
+2026-01-16 22:43:00 - quantitative_trading - INFO - Running all outlier detection methods...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Running all outlier detection methods...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Running all outlier detection methods...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Running all outlier detection methods...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Running all outlier detection methods...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Running all outlier detection methods...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Running all outlier detection methods...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Running all outlier detection methods...
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Z-score (threshold=3.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Z-score (threshold=3.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Z-score (threshold=3.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Z-score (threshold=3.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Z-score (threshold=3.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Z-score (threshold=3.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Z-score (threshold=3.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Z-score (threshold=3.0)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 23 outliers (1.61%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 23 outliers (1.61%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 23 outliers (1.61%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 23 outliers (1.61%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 23 outliers (1.61%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 23 outliers (1.61%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 23 outliers (1.61%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 23 outliers (1.61%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Modified Z-score 
+(threshold=3.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Modified Z-score 
+(threshold=3.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Modified Z-score 
+(threshold=3.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Modified Z-score 
+(threshold=3.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Modified Z-score 
+(threshold=3.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Modified Z-score 
+(threshold=3.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Modified Z-score 
+(threshold=3.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Modified Z-score 
+(threshold=3.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 30 outliers (2.10%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 30 outliers (2.10%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 30 outliers (2.10%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 30 outliers (2.10%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 30 outliers (2.10%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 30 outliers (2.10%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 30 outliers (2.10%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 30 outliers (2.10%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 47 outliers (3.29%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 47 outliers (3.29%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 47 outliers (3.29%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 47 outliers (3.29%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 47 outliers (3.29%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 47 outliers (3.29%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 47 outliers (3.29%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 47 outliers (3.29%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using IQR (multiplier=1.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using IQR (multiplier=1.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using IQR (multiplier=1.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using IQR (multiplier=1.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using IQR (multiplier=1.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using IQR (multiplier=1.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using IQR (multiplier=1.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using IQR (multiplier=1.5)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 55 outliers (3.85%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 55 outliers (3.85%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 55 outliers (3.85%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 55 outliers (3.85%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 55 outliers (3.85%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 55 outliers (3.85%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 55 outliers (3.85%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   returns: 55 outliers (3.85%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 28 outliers (1.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 28 outliers (1.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 28 outliers (1.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 28 outliers (1.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 28 outliers (1.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 28 outliers (1.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 28 outliers (1.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   volume: 28 outliers (1.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Isolation Forest 
+(contamination=0.01)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Isolation Forest 
+(contamination=0.01)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Isolation Forest 
+(contamination=0.01)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Isolation Forest 
+(contamination=0.01)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Isolation Forest 
+(contamination=0.01)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Isolation Forest 
+(contamination=0.01)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Isolation Forest 
+(contamination=0.01)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting outliers using Isolation Forest 
+(contamination=0.01)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 15 outliers (1.05%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting price gaps (threshold=5.0%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting price gaps (threshold=5.0%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting price gaps (threshold=5.0%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting price gaps (threshold=5.0%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting price gaps (threshold=5.0%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting price gaps (threshold=5.0%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting price gaps (threshold=5.0%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting price gaps (threshold=5.0%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 2 gap outliers (0.14%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 2 gap outliers (0.14%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 2 gap outliers (0.14%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 2 gap outliers (0.14%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 2 gap outliers (0.14%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 2 gap outliers (0.14%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 2 gap outliers (0.14%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 2 gap outliers (0.14%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting volume spikes (threshold=5.0x average)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting volume spikes (threshold=5.0x average)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting volume spikes (threshold=5.0x average)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting volume spikes (threshold=5.0x average)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting volume spikes (threshold=5.0x average)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting volume spikes (threshold=5.0x average)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting volume spikes (threshold=5.0x average)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Detecting volume spikes (threshold=5.0x average)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 0 volume spikes (0.00%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 0 volume spikes (0.00%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 0 volume spikes (0.00%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 0 volume spikes (0.00%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 0 volume spikes (0.00%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 0 volume spikes (0.00%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 0 volume spikes (0.00%)
+2026-01-16 22:43:00 - quantitative_trading - INFO -   Detected 0 volume spikes (0.00%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - 
+Total outliers detected: 85 (5.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - 
+Total outliers detected: 85 (5.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - 
+Total outliers detected: 85 (5.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - 
+Total outliers detected: 85 (5.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - 
+Total outliers detected: 85 (5.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - 
+Total outliers detected: 85 (5.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - 
+Total outliers detected: 85 (5.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - 
+Total outliers detected: 85 (5.96%)
+2026-01-16 22:43:00 - quantitative_trading - INFO - Handling outliers using method: clip
+2026-01-16 22:43:00 - quantitative_trading - INFO - Handling outliers using method: clip
+2026-01-16 22:43:00 - quantitative_trading - INFO - Handling outliers using method: clip
+2026-01-16 22:43:00 - quantitative_trading - INFO - Handling outliers using method: clip
+2026-01-16 22:43:00 - quantitative_trading - INFO - Handling outliers using method: clip
+2026-01-16 22:43:00 - quantitative_trading - INFO - Handling outliers using method: clip
+2026-01-16 22:43:00 - quantitative_trading - INFO - Handling outliers using method: clip
+2026-01-16 22:43:00 - quantitative_trading - INFO - Handling outliers using method: clip
+Warning: TA-Lib not available. Using pandas implementation.
+================================================================================
+               QUANTITATIVE TRADING SYSTEM - PRODUCTION VALIDATION
+                    All Data Leakage Bugs Fixed
+================================================================================
+
+Started: 2026-01-16 22:42:59.039782
+All modules loaded
+
+
+============================================================
+STEP 1: DATA ACQUISITION
+============================================================
+[OK] Fetched 1477 rows from 2018-01-02 to 2023-12-29
+
+============================================================
+STEP 2: FEATURE ENGINEERING (NO LOOKAHEAD)
+============================================================
+[OK] Created 100 features
+
+============================================================
+STEP 3: OUTLIER DETECTION
+============================================================
+Traceback (most recent call last):
+  File "D:\klypto\run_validation_standalone.py", line 89, in <module>
+    df_clean = outlier_detector.handle_outliers(method='clip', columns=['returns', 'volume'], 
+percentile=(1, 99))
+               
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\klypto\src\outlier_detection.py", line 322, in handle_outliers
+    raise ValueError(f"Unknown method: {method}")
+ValueError: Unknown method: clip

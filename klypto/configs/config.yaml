@@ -1,0 +1,206 @@
+# Quantitative Trading System Configuration
+# Configuration for data acquisition, features, models, and backtesting
+
+# Data Configuration
+data:
+  symbol: "NIFTY"
+  start_date: "2018-01-01"
+  end_date: "2024-01-01"
+  source: "auto"  # 'nse', 'yahoo', or 'auto'
+  
+  # Additional symbols for portfolio
+  portfolio_symbols:
+    - "RELIANCE"
+    - "TCS"
+    - "INFY"
+    - "HDFCBANK"
+    - "ICICIBANK"
+
+# Feature Engineering
+features:
+  # EMA periods
+  ema_periods: [5, 10, 20, 50, 100, 200]
+  
+  # EMA crossover pairs (fast, slow)
+  ema_crossovers:
+    - [5, 20]
+    - [10, 50]
+    - [20, 100]
+    - [50, 200]
+  
+  # Technical indicators
+  rsi_period: 14
+  macd_params:
+    fast: 12
+    slow: 26
+    signal: 9
+  
+  bollinger_params:
+    period: 20
+    std_dev: 2.0
+  
+  atr_period: 14
+  stochastic_params:
+    k_period: 14
+    d_period: 3
+  
+  # Lagged features
+  lags: [1, 2, 3, 5, 10]
+  
+  # Rolling windows
+  rolling_windows: [5, 10, 20, 50]
+
+# HMM Regime Detection
+hmm:
+  n_states: 3  # 3 = Bull/Bear/Sideways, 4 = Strong Bull/Weak Bull/Weak Bear/Strong Bear
+  n_iter: 100
+  random_state: 42
+  
+  # Features for HMM (if null, auto-select)
+  features:
+    - "returns"
+    - "returns_std_20"
+    - "volume_ratio"
+    - "rsi"
+    - "ema_cross_10_50"
+
+# Machine Learning Models
+ml_models:
+  # Target configuration
+  target:
+    method: "direction"  # 'direction', 'returns', 'binary_threshold'
+    horizon: 1  # prediction horizon in days
+  
+  # Train/validation/test split
+  train_ratio: 0.7
+  validation_ratio: 0.15
+  test_ratio: 0.15
+  
+  # XGBoost
+  xgboost:
+    max_depth: 5
+    learning_rate: 0.01
+    n_estimators: 500
+    early_stopping_rounds: 50
+    random_state: 42
+  
+  # LightGBM
+  lightgbm:
+    max_depth: 5
+    learning_rate: 0.01
+    n_estimators: 500
+    random_state: 42
+  
+  # Neural Network
+  neural_network:
+    hidden_layers: [128, 64, 32]
+    dropout: 0.3
+    learning_rate: 0.001
+    epochs: 100
+    batch_size: 32
+  
+  # Ensemble weights
+  ensemble:
+    use_ensemble: true
+    weights:
+      xgboost: 0.4
+      lightgbm: 0.3
+      neural_network: 0.3
+
+# Outlier Detection
+outliers:
+  methods:
+    zscore:
+      enabled: true
+      threshold: 3.0
+    
+    modified_zscore:
+      enabled: true
+      threshold: 3.5
+    
+    iqr:
+      enabled: true
+      multiplier: 1.5
+    
+    isolation_forest:
+      enabled: true
+      contamination: 0.01
+  
+  # Handling method: 'remove', 'winsorize', 'cap', 'fill'
+  handling:
+    method: "winsorize"
+    percentile: [1, 99]
+
+# Backtesting
+backtesting:
+  initial_capital: 1000000  # 10 lakhs
+  
+  # Transaction costs (Indian markets)
+  transaction_cost: 0.0005  # 0.05% (brokerage + STT + taxes)
+  slippage: 0.0002  # 0.02%
+  
+  # Position sizing
+  position_size: 1.0  # fraction of capital to use (1.0 = 100%)
+  position_method: "fixed"  # 'fixed', 'kelly', 'volatility_adjusted'
+  
+  # Risk management
+  risk_management:
+    stop_loss: 0.02  # 2% stop loss
+    take_profit: 0.05  # 5% take profit
+    max_drawdown_limit: 0.20  # 20% max drawdown
+  
+  # Walk-forward optimization
+  walk_forward:
+    enabled: false
+    training_window: 252  # 1 year
+    test_window: 63  # 3 months
+
+# Signals and Strategy
+strategy:
+  # Signal generation method
+  method: "ml_ensemble"  # 'ema_crossover', 'hmm_regime', 'ml_single', 'ml_ensemble'
+  
+  # Signal thresholds
+  thresholds:
+    ml_probability: 0.6  # probability threshold for classification
+    confidence_min: 0.55  # minimum confidence for trade
+  
+  # Combine with regime filter
+  use_regime_filter: true
+  trade_regimes: ["Bull", "Sideways"]  # only trade in these regimes
+
+# Output Configuration
+output:
+  # Directories
+  data_dir: "data"
+  models_dir: "models"
+  plots_dir: "plots"
+  results_dir: "results"
+  
+  # Save options
+  save_intermediate: true
+  save_plots: true
+  save_models: true
+  
+  # File formats
+  data_format: "csv"  # 'csv', 'parquet', 'pickle'
+  plot_format: "png"  # 'png', 'pdf', 'svg'
+  plot_dpi: 300
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: "logs/trading_system.log"
+  console: true
+
+# Execution
+execution:
+  # Parallel processing
+  n_jobs: -1  # -1 = use all cores
+  
+  # Random seed
+  random_state: 42
+  
+  # Performance optimization
+  use_cache: true
+  cache_dir: ".cache"
